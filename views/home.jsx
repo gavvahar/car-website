@@ -7,10 +7,10 @@ function home(){
             <main>
                 <h1>Racer's Heaven</h1>
                 <div>
-                    <img src="/images/brenda-godinez-MsTOg6rhRVk-unsplash.jpg" alt="Brenda Godinez" width="40%"/>
-                    <div>
-                        Photo by <a href="https://unsplash.com/es/@cravethebenefits?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brenda Godinez</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                    </div>
+                    {/* <img src="/images/Nihar_final0001-0300.mp4" alt="Racer's Heaven" width="40%"/> */}
+                    <video width="40%" controls>
+                        <source src='/images/Nihar_final0001-0300.mp4'/>
+                    </video>
                 </div>
                 <a href="/places">
                     <button className="btn btn-primary">Places Page</button>
