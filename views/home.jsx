@@ -12,9 +12,9 @@ function home(){
                         <source src='/images/Nihar_final0001-0300.mp4'/>
                     </video>
                 </div>
-                <a href="/places">
+                {/* <a href="/places">
                     <button className="btn btn-primary">Places Page</button>
-                </a>
+                </a> */}
             </main>
         </Def>
     )
