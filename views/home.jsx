@@ -9,7 +9,7 @@ function home(){
                 <div>
                     {/* <img src="/images/Nihar_final0001-0300.mp4" alt="Racer's Heaven" width="40%"/> */}
                     <video width="40%" controls>
-                        <source src='/images/Nihar_final0001-0300.mp4'/>
+                        <source src='/images/racers-heaven.mp4'/>
                     </video>
                 </div>
                 {/* <a href="/places">
