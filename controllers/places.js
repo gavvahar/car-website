@@ -31,6 +31,9 @@ router.post("/", (req, res) => {
       }
     });
 });
+router.get("/about", (req, res) => {
+  res.render("places/about");
+});
 
 router.get("/new", (req, res) => {
   res.render("places/new");
