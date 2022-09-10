@@ -3,11 +3,12 @@ function Def(html){
     return(
         <html>
             <head>
-                <title>Home Page</title>
+                {/* <title>Home Page</title> */}
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossOrigin="anonymous"/>
 				<link rel="stylesheet" href="/css/style.css"/>
             </head>
             <body>
+                <h1>Racer's Heaven</h1>
                 <nav>
                     <ul>
                         <li>
@@ -18,6 +19,12 @@ function Def(html){
                         </li>
                         <li>
                             <a href="/places/new">Add Place</a>
+                        </li>
+                        <li>
+                            <a href="/places/about">About</a>
+                        </li>
+                        <li>
+                            <a href="/places/test">Test page</a>
                         </li>
                     </ul>
                 </nav>

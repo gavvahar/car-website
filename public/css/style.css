@@ -1,10 +1,10 @@
 h1{
     text-align: center;
-    color: #0071BE;
+    color: black;
 }
 
 nav {
-    background-color: #0071BE;
+    background-color: midnightblue;
     padding: 10px;
 }
 
@@ -24,16 +24,16 @@ nav a {
 }
 
 nav a:hover {
-    color: pink;
+    /* color: pink; */
     text-decoration: none;
 }
 body {
-  background-color: #0071BE;
+  background-color: black;
   text-align: center;
 }
 
 main {
   margin-right: 20px;
   margin-left: 20px;
-  background-color: white;
+  background-color: grey;
 }
