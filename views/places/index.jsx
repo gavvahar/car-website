@@ -23,7 +23,7 @@ function index (data) {
   return (
     <Def>
         <main>
-            <h1>PLACES INDEX PAGE</h1>
+            <h1>Welcome to Racer's Heaven</h1>
             <div className='row'>
               {placesFormatted}
             </div>
