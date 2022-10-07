@@ -32,7 +32,7 @@ router.post("/", (req, res) => {
     });
 });
 router.get("/test", (req, res) => {
-  db.Place.find()
+  db.Car.find()
     .then((cars) => {
       res.render("places/test", { cars });
     })

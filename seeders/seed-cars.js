@@ -6,7 +6,7 @@ db.Car.create([
     make: "Lexus",
     model: "IS250",
     trim: "F-Sport",
-    // pic: "/images/large.jpg",
+    pic: "/images/pic.jpg",
   },
   //   {
   //     name: "Coding Cat Cafe",
