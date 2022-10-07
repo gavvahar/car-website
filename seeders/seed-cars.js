@@ -8,14 +8,6 @@ db.Car.create([
     trim: "F-Sport",
     pic: "/images/pic.jpg",
   },
-  //   {
-  //     name: "Coding Cat Cafe",
-  //     city: "Phoenix",
-  //     state: "AZ",
-  //     cuisines: "Coffee, Bakery",
-  //     pic: "/images/the-interior.jpg",
-  //     founded: 2020,
-  //   },
 ])
   .then(() => {
     console.log("Success!");
