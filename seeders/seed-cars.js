@@ -2,10 +2,9 @@ const db = require("../models");
 
 db.Car.create([
   {
-    founded: 2015,
+    year: 2015,
     make: "Lexus",
     model: "IS250",
-    state: "WA",
     trim: "F-Sport",
     // pic: "/images/large.jpg",
   },

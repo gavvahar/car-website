@@ -9,7 +9,7 @@ let carSchema = new mongoose.Schema({
   },
   make: { type: String, required: true },
   model: { type: String, required: true },
-  pic: { type: String, default: "../public/images/pic.jpg" },
+  pic: { type: String, default: "images/pic.jpg" },
   trim: { type: String, default: "N/A" },
 });
 

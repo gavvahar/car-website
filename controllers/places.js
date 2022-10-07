@@ -32,7 +32,14 @@ router.post("/", (req, res) => {
     });
 });
 router.get("/test", (req, res) => {
-  res.render("places/test");
+  db.Place.find()
+    .then((cars) => {
+      res.render("places/test", { cars });
+    })
+    .catch((err) => {
+      console.log(err);
+      res.render("error404");
+    });
 });
 router.get("/about", (req, res) => {
   res.render("places/about");
