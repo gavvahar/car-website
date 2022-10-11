@@ -8,12 +8,12 @@ function show (data) {
   let rating = (
     <h3 className='inactive'>Not yet rated</h3>
   )
-  if(data.place.comments.length)
+  if(data.car.comments.length)
   {
-    let sumRatings = data.place.comments.reduce((tot, c) => {
+    let sumRatings = data.car.comments.reduce((tot, c) => {
       return tot + c.stars
     }, 0)
-    let averageRating = Math.round(sumRatings / data.place.comments.length)
+    let averageRating = Math.round(sumRatings / data.car.comments.length)
     let stars = ''
     for(let i = 0; i < averageRating; i++) {
       stars += '⭐'
@@ -21,7 +21,7 @@ function show (data) {
     rating = (
       <h3>{stars} stars</h3>
     )
-    comments = data.place.comments.map(c => {
+    comments = data.car.comments.map(c => {
       return (
         <div className='border'>
           <h2 className='rant'>{c.rant ? 'Rant! 😒': 'Rave! 😻'}</h2>
@@ -37,18 +37,18 @@ function show (data) {
   return (
         <Def>
           <main>
-            <h1>{ data.place.name }</h1>
+            <h1>{ data.car.year } { data.car.make } { data.car.model } { data.car.trim }</h1>
             <div className='row'>
               <div className='col-sm-6'>
-                <img src={data.place.pic} alt={data.place.name} />
-                <h3>
-                  Located in {data.place.city}, {data.place.name}
-                </h3>
+                <img src={data.car.pic} alt={data.car.make} />
+                {/* <h3>
+                  Located in {data.car.city}, {data.car.name}
+                </h3> */}
               </div>
               <div className='col-sm-6'>
                 <h2>Description</h2>
-                <h3>{data.place.showEstablished()}</h3>
-                <h4>Serving {data.place.cuisines}</h4>
+                {/* <h3>{data.car.showEstablished()}</h3> */}
+                {/* <h4>Serving {data.car.cuisines}</h4> */}
                 <h2>Comments</h2>
                 {comments}
                 <h2>Rating</h2>
@@ -56,10 +56,10 @@ function show (data) {
               </div>
             </div>
           </main>
-          <a href={`/places/${data.place.id}/edit`} className="btn btn-warning"> 
+          <a href={`/places/${data.car.id}/edit`} className="btn btn-warning"> 
             Edit
           </a>
-          <form method="POST" action={`/places/${data.place.id}?_method=DELETE`}>
+          <form method="POST" action={`/places/${data.car.id}?_method=DELETE`}>
             <button type="submit" className="btn btn-danger">
               Delete
             </button>

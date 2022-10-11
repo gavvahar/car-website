@@ -50,11 +50,11 @@ router.get("/new", (req, res) => {
 });
 
 router.get("/:id", (req, res) => {
-  db.Place.findById(req.params.id)
+  db.Car.findById(req.params.id)
     .populate("comments")
-    .then((place) => {
-      console.log(place.comments);
-      res.render("places/show", { place });
+    .then((car) => {
+      console.log(car.comments);
+      res.render("places/show", { car });
     })
     .catch((err) => {
       console.log("err", err);
@@ -63,7 +63,7 @@ router.get("/:id", (req, res) => {
 });
 
 router.put("/:id", (req, res) => {
-  db.Place.findByIdAndUpdate(req.params.id, req.body)
+  db.Car.findByIdAndUpdate(req.params.id, req.body)
     .then(() => {
       res.redirect(`/places/${req.params.id}`);
     })
@@ -74,8 +74,8 @@ router.put("/:id", (req, res) => {
 });
 
 router.delete("/:id", (req, res) => {
-  db.Place.findByIdAndDelete(req.params.id)
-    .then((place) => {
+  db.Car.findByIdAndDelete(req.params.id)
+    .then((car) => {
       res.redirect("/places");
     })
     .catch((err) => {
@@ -85,7 +85,7 @@ router.delete("/:id", (req, res) => {
 });
 
 router.get("/:id/edit", (req, res) => {
-  db.Place.findById(req.params.id)
+  db.Car.findById(req.params.id)
     .then((place) => {
       res.render("places/edit", { place });
     })
