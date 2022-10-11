@@ -2,9 +2,9 @@ const router = require("express").Router();
 const db = require("../models");
 
 router.get("/", (req, res) => {
-  db.Place.find()
-    .then((places) => {
-      res.render("places/index", { places });
+  db.Car.find()
+    .then((cars) => {
+      res.render("places/index", { cars });
     })
     .catch((err) => {
       console.log(err);

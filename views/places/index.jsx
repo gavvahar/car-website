@@ -2,21 +2,18 @@ const React = require('react')
 const Def = require('../default')
 
 function index (data) {
-  let placesFormatted = data.places.map((place) => {
+  let carsFormatted = data.cars.map((car) => {
     return (
       <div key="1" className='col-sm-6'>
         <h2 className='text-center'>
-            <a href={`/places/${place.id}`}>
-              {place.name}
+            <a href={`/places/${car.id}`}>
+              {car.year} {car.make} {car.model}
             </a>
           </h2>
         <p className='text-center'>
-          {place.cuisines}
+          
         </p>
-        <img src={place.pic} alt={place.name} className='center' width="100%" height="50%"/>
-        <p className='text-center'>
-          Located in {place.city}, {place.state}
-        </p>
+        <img src={car.pic} alt={car.model} className='center' width="100%" height="50%"/>
       </div>
     )
   })
@@ -25,7 +22,7 @@ function index (data) {
         <main>
             <h1>Welcome to Racer's Heaven</h1>
             <div className='row'>
-              {placesFormatted}
+              {carsFormatted}
             </div>
         </main>
     </Def>
